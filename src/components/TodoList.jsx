@@ -25,7 +25,7 @@ function TodoList () {
         
     }
     return (
-        <div>
+        <div className="todo-container">
             <input 
                 type="text" 
                 placeholder="Enter To-do"
