@@ -8,15 +8,17 @@ function Counter() {
     const resetCount = () => setCount(0)
     return (
         <div className="counter">
-            <h2>{count}</h2>
-            <button 
-                onClick={addToCount}
-                className="counter-btn"
-            >Add</button>
-            <button 
-                onClick={reduceCount}
-                className="counter-btn"
-            >Subtract</button>
+           <div className="counter-gui">
+                <button 
+                    onClick={addToCount}
+                    className="counter-btn"
+                >Add</button>
+                <h2 className="count-value">{count}</h2>
+                <button 
+                    onClick={reduceCount}
+                    className="counter-btn"
+                >Sub</button>
+           </div>
             <button 
                 onClick={resetCount}
                 className="counter-btn"
