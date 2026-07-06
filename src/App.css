@@ -47,5 +47,58 @@
 }
 
 .todo-container {
-    background-color: darkorange;
+    background-color: #E3E9FF;
+}
+
+.todo-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    width: 75%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.todo-input {
+    border: none;
+    border-bottom: 2px solid #AF7EEA;
+    color: white;
+    background-color: #AF7EEA23;
+    padding: 8px;
+    color: #AF7EEA;
+    flex-grow: 1;
+}
+
+.todo-input::placeholder {
+    color: #AF7EEA;
+}
+
+.add-todo-btn {
+    background-color: #AF7EEA;
+    padding: 8px 12px;
+    border: none;
+    color: white;
+}
+
+.todo-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 75%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgb(95, 94, 94);
+    padding: 12px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4px;
 }
