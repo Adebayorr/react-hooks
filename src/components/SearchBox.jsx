@@ -4,12 +4,12 @@ function SearchBox() {
     const inputRef = useRef(null)
     const renderCountRef = useRef(0)
     const [inputValue, setInputValue] = useState('')
-    
-    // useEffect(() => {
-    //     renderCountRef.current += 1
-    // })
 
-    renderCountRef.current += 1
+    useEffect(() => {
+        renderCountRef.current += 1
+    })
+
+    // renderCountRef.current += 1
 
     useEffect(() =>{
         let inputElem = inputRef.current
