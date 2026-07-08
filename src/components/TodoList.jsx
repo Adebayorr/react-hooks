@@ -44,7 +44,7 @@ function TodoList () {
                 {list.map(item => (
                     <li key={item.id}>
                        <span>{item.name} </span> 
-                        <button id={item.id} onClick={deleteTodo}>delete</button>
+                        <button id={item.id} onClick={deleteTodo} className="delete-button">delete</button>
                     </li>
                     
                 ))}
