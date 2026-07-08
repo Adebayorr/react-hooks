@@ -4,7 +4,9 @@ function SearchBox() {
     const inputRef = useRef(null)
     const renderCountRef = useRef(0)
     const [inputValue, setInputValue] = useState('')
-    renderCountRef.current += 1
+    useEffect(() => {
+        renderCountRef.current += 1
+    })
 
     useEffect(() =>{
         let inputElem = inputRef.current

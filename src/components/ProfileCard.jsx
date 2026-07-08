@@ -22,14 +22,17 @@ function ProfileCard() {
     }, [])
 
     return (
-        <div>
-            {loadingFlag ? "Loading" : 
-                <>
+        <div className="profile-card-container">
+            <div className="card">
+
+                {loadingFlag ? "Loading" : 
+                <div className="profile-card">
                     <p>{profileData.name}</p>
                     <p>{profileData.email}</p>
                     <p>{profileData.city}</p>
-                </>
-            }
+                </div>
+                }   
+            </div>
             
         </div>
     )
